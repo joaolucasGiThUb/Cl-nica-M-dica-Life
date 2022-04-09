@@ -1,14 +1,147 @@
+/*Estilos Gerais*/
 * {
   box-sizing: border-box;
 }
+
 body {
-  margin: 0px;
-  padding: 0px;
+  margin          : 0px;
+  padding         : 0px;
   background-color: #fff;
-  font-family: 'Source Sans Pro',Sans-Serif;
-main {
-  color: #0000008c;
-  
+  font-family     : 'Source Sans Pro', Sans-Serif;
 }
 
+main {
+  color        : #0000008c;
+  margin-bottom: 60px;
+}
 
+div {
+  border: 2px red solid
+}
+
+.container {
+  max-width: 1024px;
+  margin   : 0 auto;
+}
+
+h3 {
+  margin: 0;
+}
+
+.topo {
+  background-color: #00cad1;
+  width           : 100%;
+}
+
+.topo .container {
+  display        : flex;
+  align-items    : center;
+  justify-content: space-between;
+  width          : 100%;
+  min-height     : 60px;
+  padding        : 0 10px;
+  margin         : 0 auto;
+}
+
+.topo-titulo {
+  font-weight    : 600;
+  font-size      : 28px;
+  color          : #fff;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+.topo-links a {
+  padding        : 10px;
+  text-decoration: none;
+  color          : #fff;
+  font-weight    : 600;
+}
+
+.topo-links a:hover {
+  color: #004b4c;
+}
+
+/*Fim topo*/
+
+/*Início Conteúdo*/
+
+
+/*Fim de conteúdo*/
+
+/* Início CSS Rodapé */
+
+footer {
+  background-color: #0d6e71;
+  color           : #fff;
+  padding         : 20px;
+}
+
+footer .container {
+  text-align: center;
+}
+
+/* Fim CSS Rodapé */
+
+/*RESPONSIVIDADE*/
+
+@media (min-width: 1025px) {
+  .box-visao-geral {
+    height: 500px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .box-visao-geral {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .box-visao-geral {
+    height: 300px;
+  }
+
+  .box-sobre img {
+    display: none;
+  }
+
+  .box-especialidades {
+    justify-content: center;
+  }
+
+  .box-especialidade {
+    margin: 20px;
+    width : calc(100%/ 2 - 40px);
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    display       : flex;
+    flex-direction: column;
+  }
+
+  .box-visao-geral {
+    height: 200px;
+  }
+
+  .container h1 {
+    font-size    : 25px;
+    padding-top  : 40px;
+    padding-right: 65px;
+  }
+
+  .box-sobre img {
+    display: none;
+  }
+
+  .box-especialidades {
+    height: calc(100%);
+  }
+
+  .box-especialidade {
+    width: calc(100vh / 2);
+  }
+}
