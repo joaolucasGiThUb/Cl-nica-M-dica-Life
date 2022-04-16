@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/especia.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style-especialidade.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
     rel="stylesheet">
@@ -28,9 +29,12 @@
       </nav>
     </div>
   </header>
+  <!--Fim do topo-->
+
+  <!--Início do conteúdo-->
   <main>
-    <section class="container">
-      <div class="links-especialidades">
+    <section class="conteiner-links-especialidades">
+      <div class="container links-especialidades">
         <a href="#ortopedia">Ortopedia</a>
         <a href="#pediatria">Pediatria</a>
         <a href="#geriatria">Geriatria</a>
@@ -39,14 +43,14 @@
       </div>
       <h1>Conheça as nossas especialidades</h1>
     </section>
-    <section>
-      <div>
+    <section id="ortopedia" class="container sessao-especialidades">
+      <div class="container-titulo">
         <h3>Ortopedia</h3>
         <p>A ortopedia é a especialidade médica que cuida da saúde relacionadas aos elementos do aparelho locomotor,
           como ossos, músculos, ligamentos e articulações.</p>
       </div>
-      <div>
-        <img src="/assets/ortopedia.png" alt="Médico">
+      <div class="box-tabela-especialista">
+        <img src="/assets/ortopedia.png" alt="Ortopedia" title="Ortopedia">
         <table class="tabela-especialistas">
           <thead>
             <tr>
@@ -76,16 +80,16 @@
         </table>
       </div>
     </section>
-    <section id="pediatria">
+    <section id="pediatria" class="container sessao-especialidade">
       <div>
         <h3>Pediatria</h3>
         <p>A pediatria é a especialidade médica dedicada à assistência à criança e ao adolescente, nos seus diversos
           aspectos, sejam eles preventivos ou curativos.</p>
       </div>
 
-      <div>
+      <div class="box-tabela-especialista">
         <img src="assets/pediatra2.png" alt="Pediatra" title="Pediatra">
-        <table>
+        <table class="tabela-especialistas">
           <thead>
             <tr>
               <th>Dias</th>
@@ -115,17 +119,17 @@
       </div>
     </section>
 
-    <section id="geriatria">
+    <section id="geriatria" class="container sessao-especialidade">
       <div>
         <h3>Geriatria</h3>
         <p>Medicina geriátrica ou geriatria é o ramo da medicina que foca o estudo, a prevenção e o tratamento de
           doenças e da incapacidade em idades avançadas.</p>
       </div>
 
-      <div>
+      <div class="box-tabela-especialista" c >
         <img src="assets/geriatra.png" alt="Geriatra" title="Geriatra">
 
-        <table>
+        <table class="tabela-especialistas">
           <thead>
             <tr>
               <th>Dias</th>
@@ -160,16 +164,16 @@
       </div>
     </section>
 
-    <section id="psicologia">
+    <section id="psicologia" class="container sessao-especialidade">
       <div>
         <h3>Psicologia</h3>
         <p>Psicologia é a especialidade médica que trata da mente, do estudo e análise de seus processos e comportamento
           de indivíduos e grupos humanos em diferentes situações.</p>
       </div>
 
-      <div>
-        <img src="assets/psicologo.png" alt="Psicólogo" title="Psicólogo">
-        <table>
+      <div class="box-tabela-especialista">
+        <img src="assets/psicologo.png" alt="Psicólogo" title="Psiscólogo">
+        <table class="tabela-especialistas">
           <thead>
             <tr>
               <th>Dias</th>
@@ -199,16 +203,16 @@
       </div>
     </section>
 
-    <section id="fisioterapia">
+    <section id="fisioterapia" class="container sessao-especialidade">
       <div>
         <h3>Fisioterapia</h3>
         <p>Fisioterapia é uma ciência da saúde aplicada ao estudo, diagnóstico, prevenção e tratamento de disfunções
           cinéticas funcionais de órgãos e sistemas.</p>
       </div>
 
-      <div>
+      <div class="box-tabela-especialista">
         <img src="assets/fisioterapia.png" alt="Fisioterapeuta" title="Fisioterapeuta">
-        <table>
+        <table class="tabela-especialistas">
           <thead>
             <tr>
               <th>Dias</th>
@@ -248,8 +252,9 @@
         </table>
       </div>
     </section>
-
   </main>
+  <!--fim conteúdo principal-->
+
   <footer>
     <div class="container">
       <img src="assets/logo.png" alt="Clínica Médica" title="Clínica Médica Life">
