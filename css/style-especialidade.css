@@ -10,9 +10,6 @@
   text-align: center;
 }
 
-/* max-width: 600px;
-margin: 0 auto;
-text-align: center; */
 .conteiner-links-especialidades {
   padding   : 0 20px;
   text-align: center;
@@ -44,7 +41,7 @@ text-align: center; */
 .box-tabela-especialista {
   display: flex;
   height : 240px;
-  padding: 0 20px;
+  padding: 1 20px;
 }
 
 /*Fim tabela especialidades*/
@@ -81,4 +78,32 @@ text-align: center; */
 .tabela-especialistas th,
 .tabela-especialistas td {
   padding: 10px;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 768px) {
+  .box-tabela-especialista {
+    margin: 0;
+  }
+
+  .box-tabela-especialista img {
+    display: none;
+  }
+
+  .tabela-especialistas {
+    width     : 100%;
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 461px) {
+  .box-tabela-especialista {
+    margin : 0;
+    padding: 0;
+  }
+
+  .links-especialidades {
+    flex-direction: row;
+    flex-wrap     : wrap;
+  }
 }
